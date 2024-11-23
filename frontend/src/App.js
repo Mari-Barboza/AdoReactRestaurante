@@ -51,6 +51,9 @@ function App() {
                     )}
                 </div>
             </main>
+
+            {/* Footer Component */}
+            <Footer />
         </div>
     );
 }
@@ -62,6 +65,37 @@ function Card({ title, description }) {
             <p>{description}</p>
             <button className="buy-button">Comprar</button>
         </div>
+    );
+}
+
+// Footer Component
+function Footer() {
+    return (
+        <footer className="footer">
+            <div className="footer-content">
+                <div className="footer-section">
+                    <h4>Fillintro</h4>
+                    <p>Sabores autênticos da Itália, onde cada prato é uma obra de arte.</p>
+                </div>
+                <div className="footer-section">
+                    <h4>Sobre nós</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div className="footer-section">
+                    <h4>Contato</h4>
+                    <p>Email: contact@website.com</p>
+                    <p>Phone: +1 234 567 890</p>
+                </div>
+            </div>
+            <div className="footer-bottom">
+                <p>&copy; 2024 Fillintro. Todos os Direitos Reservados.</p>
+            </div>
+        </footer>
     );
 }
 
