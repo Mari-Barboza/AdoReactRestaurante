@@ -31,6 +31,7 @@ public class ProdutoController {
     public static class ProdutoResponse {
         private String id;
         private String titulo;
+        
 
         public ProdutoResponse(String id, String titulo) {
             this.id = id;

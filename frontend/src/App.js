@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 
+
 function App() {
     const [produtos, setProdutos] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -28,13 +29,14 @@ function App() {
     return (
         <div>
             <header className="header">
-                <h1>Welcome to Our Website!</h1>
+            <img src="/logo Restaurante.png" alt="Logo" />
+
                 <nav>
                     <ul className="nav">
                         <li><a href="#" className="link">Home</a></li>
-                        <li><a href="#" className="link">About</a></li>
-                        <li><a href="#" className="link">Services</a></li>
-                        <li><a href="#" className="link">Contact</a></li>
+                        <li><a href="#" className="link">Sobre</a></li>
+                        <li><a href="#" className="link">Serviços</a></li>
+                        <li><a href="#" className="link">Contato</a></li>
                     </ul>
                 </nav>
             </header>
